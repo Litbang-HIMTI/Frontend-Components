@@ -6,9 +6,6 @@
 :root {
     --header-height: 3rem;
 
-    --color-background: #000000;
-    --color-primary: #99CF9A;
-    --color-text: #FFFFFF;
     /*========== Font and typography ==========*/
     --body-font: 'Raleway', sans-serif;
 
@@ -147,13 +144,15 @@ main {
 
 .navigation {
     display: flex;
-
     display: none;
     flex-direction: column;
+    margin-top: 5rem;
 }
 
 .navigation a{
     color: #FFFFFF;
+    font-size: 16pt;
+    font-weight: var(--font-semi-bold);
 }
 
 .tagline h1 {
@@ -185,7 +184,6 @@ main {
 .card-background {
     position: relative;
     width: auto;
-    height: 160px;
 }
 
 .card-layer {
@@ -233,17 +231,161 @@ main {
 .gallery-container {
     display: flex;  
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .background-photo {
     background-color: #FFFFFF;
-    width: 13.5rem;
-    height: 13.5rem;
+    width: 47.5%;
+    height: 47.5%;
     padding: 0.75rem;
     margin-bottom: 1rem;
 }
 
 .himti-profil{
     text-align: center;
+}
+
+@media screen and (min-width: 724px) {
+    body {
+        margin: 0 2rem 0 2rem;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .navigation{
+        display: flex;
+        width: 35%;
+    }
+
+    .navigation a {
+        margin-bottom: 0.5rem;
+    }
+
+    .tagline h1 {
+        font-size: 58pt;
+    }
+
+    .landing-component{
+        display: flex;
+        align-items: flex-end;
+        margin: 3rem 0 3rem 0;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .card, .card-background-picture, .card-layer {
+        height: 16rem;
+        width: 16rem;
+    }
+
+    .card {
+        justify-content: space-between;
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    .card-header {
+        font-size: 12pt;
+    }
+
+    .card-body p {
+        font-size: 10pt;
+    }
+
+    .himti-profil{
+        margin: auto;
+        padding: 3rem;
+        font-size: 18pt;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .tagline h1 {
+        font-size: 106pt;
+    }
+
+    .landing-component{
+        margin: 2rem 0 2rem 0;
+    }
+
+    .card, .card-background-picture, .card-layer {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .card-header {
+        font-size: 16pt;
+    }
+
+    .card-body p {
+        font-size: 10pt;
+    }
+
+    .background-photo {
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+@media screen and (min-width: 1437px) {
+
+    .landing-component{
+        margin: 3rem 0 3rem 0;
+    }
+
+    .tagline h1 {
+        font-size: 106pt;
+    }
+
+    .card, .card-background-picture, .card-layer {
+        height: 23rem;
+        width: 23rem;
+    }
+
+    .card-header {
+        font-size: 21pt;
+    }
+
+    .card-body p {
+        font-size: 16pt;
+    }
+
+    .gallery-container{
+        justify-content: space-between;
+
+    }
+
+    .background-photo {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width: 1624px) {
+    .tagline h1 {
+        font-size: 106pt;
+    }
+
+    .card, .card-background-picture, .card-layer {
+        height: 26rem;
+        width: 26rem;
+    }
+
+    .card-header {
+        font-size: 24pt;
+    }
+
+    .card-body p {
+        font-size: 16pt;
+    }
 }
