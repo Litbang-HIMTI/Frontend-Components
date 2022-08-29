@@ -1,0 +1,263 @@
+/* ==================== GOOGLE FONTS ==================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+/* ==================== Global Variable ==================== */
+:root {
+  /* ======= Margin and Width ======= */
+  --body-margin: 17px;
+  --main-margin: 20px;
+  --width-aside: 215px;
+
+  /* ======= Color ======= */
+  --color-app-black: #000000;
+  --color-app-white: #ffffff;
+  --color-app-green: #99cf9a;
+
+  /* ======= Font and typography ======= */
+  --body-font: 'Raleway', sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /* ======= Font weight ======= */
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 800;
+
+  /* ======= Margin Bottom ======= */
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* ======= z index ======= */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+  /* ======= Border height ======= */
+  --border-thin: 1px;
+  --border-thick: 4px;
+}
+
+/* ==================== Global Variable For Large and Extra Large Devices ==================== */
+@media screen and (min-width: 992px) {
+  :root {
+    --body-margin: 60px;
+    --main-margin: 110px;
+
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 813rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --width-aside: 357px;
+  }
+}
+
+/* ==================== Base Style ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 var(--body-margin);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--color-app-black);
+  color: var(--color-app-white);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #ffffff;
+  font-weight: var(--font-semi-bold);
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+h2 {
+  font-size: var(--h2-font-size);
+}
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+p {
+  font-size: var(--normal-font-size);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ======= Header Style ======= */
+
+.divider {
+  height: 29px;
+  background-color: var(--color-app-black);
+  border-bottom: 4px solid var(--color-app-white);
+  z-index: var(--z-fixed);
+}
+
+.navigation__container ul {
+  border-bottom: 2px solid #1d1d1d;
+}
+
+.link-logo h1 {
+  font-weight: var(--font-extra-bold);
+  font-size: 32px;
+}
+
+.navigation__container ul li a {
+  color: var(--color-app-white);
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.navigation__container ul li {
+  max-width: 110px;
+}
+
+.navigation__action img {
+  width: 42px;
+  height: 40px;
+}
+
+.navigation__toggler {
+  flex-direction: column;
+  align-items: flex-end;
+  width: 42px;
+  height: 40px;
+  gap: 7px;
+}
+
+.navigation__toggler span {
+  background-color: var(--color-app-white);
+  height: 4px;
+}
+
+.navigation__toggler span:nth-child(1) {
+  width: 100%;
+}
+
+.navigation__toggler span:nth-child(2) {
+  width: 75%;
+}
+
+.navigation__toggler span:nth-child(3) {
+  width: 50%;
+}
+
+/* ======= Slider Left Style ======= */
+#aside {
+  margin-left: var(--body-margin);
+  margin-top: 110px;
+  width: var(--width-aside);
+  transition: all 1s ease-in-out;
+  transform: translateX(500%);
+}
+#aside ul {
+  top: calc(29px + 25px);
+}
+#aside .link-logo img {
+  margin-bottom: 143px;
+}
+#aside ul li a {
+  font-weight: var(--font-semibold);
+  color: var(--color-app-white);
+}
+#aside ul .active a {
+  font-weight: var(--font-extra-bold);
+}
+
+/* ======= Main Style ======= */
+main {
+  margin-top: var(--main-margin);
+}
+
+/* =================== Global Animation =================== */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__container ul {
+    overflow: hidden !important ;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navigation__container ul li a {
+    font-size: 12px;
+  }
+  .navigation__action {
+    border-bottom: 2px solid #1d1d1d;
+  }
+
+  #aside {
+    transform: translateX(0);
+  }
+
+  main {
+    margin-left: var(--width-aside);
+  }
+}

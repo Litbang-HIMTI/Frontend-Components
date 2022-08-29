@@ -1,0 +1,59 @@
+.jumbotron__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 8%;
+  row-gap: 44px;
+}
+
+.tagline img {
+  max-width: 45px;
+  top: 0;
+  right: -1rem;
+  cursor: pointer;
+}
+
+.jumbotron__title {
+  margin-bottom: 0;
+  font-size: 38px;
+  font-weight: var(--font-bold);
+  color: var(--color-app-white);
+}
+
+.jumbotron__content p {
+  max-width: 270px;
+}
+
+.text-green {
+  color: var(--color-app-green);
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron__content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .jumbotron__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .jumbotron__title {
+    font-size: 6vw;
+  }
+
+  .tagline img {
+    max-width: 29px;
+    top: unset;
+    bottom: 1rem;
+    right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .jumbotron__title {
+    font-size: 118px;
+  }
+}
