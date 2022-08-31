@@ -1,3 +1,4 @@
+/* ===== Jumbotron Section ===== */
 .jumbotron__content {
   display: flex;
   flex-wrap: wrap;
@@ -28,6 +29,60 @@
   color: var(--color-app-green);
 }
 
+/* ===== Information Section ===== */
+
+#important-information {
+  margin-top: 50px;
+}
+
+#important-information .content {
+  border-top: 3px solid var(--color-app-white);
+}
+
+.section__title {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.information__card {
+  /* max-height: 500px !important; */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.information__card .card > img {
+  max-height: 163px !important;
+  object-fit: cover;
+}
+
+.information__card .card-body {
+  background-color: var(--color-app-white);
+  opacity: 0.7;
+  color: var(--color-app-black);
+}
+
+.information__card .card-link > p {
+  color: var(--color-app-black);
+}
+
+.information__card .card-link:hover > p {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+}
+
+.information__card .card-title {
+  font-size: 24px;
+  font-weight: 800;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.information__card .card-text {
+  font-size: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .jumbotron__content {
     display: flex;
@@ -36,6 +91,18 @@
 
   .jumbotron__title {
     font-size: 48px;
+  }
+
+  .information__card .card > img {
+    max-height: 500px !important;
+  }
+
+  .information__card .card-title {
+    font-size: 32px;
+  }
+
+  .information__card .card-text {
+    font-size: 24px;
   }
 }
 
@@ -50,10 +117,22 @@
     bottom: 1rem;
     right: 3rem;
   }
+
+  #important-information {
+    margin-top: 165px;
+  }
 }
 
 @media screen and (min-width: 1400px) {
   .jumbotron__title {
     font-size: 118px;
+  }
+
+  .information__card .card-title {
+    font-size: 3rem;
+  }
+
+  .information__card .card-text {
+    font-size: 36px;
   }
 }

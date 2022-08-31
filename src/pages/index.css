@@ -195,14 +195,18 @@ img {
 
 /* ======= Slider Left Style ======= */
 #aside {
+  background-color: var(--color-app-black);
   margin-left: var(--body-margin);
-  margin-top: 110px;
   width: var(--width-aside);
-  transition: all 1s ease-in-out;
-  transform: translateX(500%);
+  transition: transform 1s ease-in-out;
+  transform: translateX(100%);
+  z-index: var(--z-fixed);
+  top: 0;
+  right: 0;
 }
 #aside ul {
   top: calc(29px + 25px);
+  overflow-x: hidden;
 }
 #aside .link-logo img {
   margin-bottom: 143px;
@@ -211,8 +215,15 @@ img {
   font-weight: var(--font-semibold);
   color: var(--color-app-white);
 }
+#aside ul .active img {
+  margin-right: 10px;
+  animation: slide-right 0.5s ease-in-out;
+}
 #aside ul .active a {
   font-weight: var(--font-extra-bold);
+}
+.open-slider {
+  transform: translateX(0) !important;
 }
 
 /* ======= Main Style ======= */
@@ -239,6 +250,15 @@ main {
   }
 }
 
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .navigation__container ul {
     overflow: hidden !important ;
@@ -254,6 +274,10 @@ main {
   }
 
   #aside {
+    margin-top: 110px;
+    top: unset;
+    right: unset;
+    left: 0;
     transform: translateX(0);
   }
 
