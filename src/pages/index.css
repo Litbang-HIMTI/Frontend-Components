@@ -208,7 +208,7 @@ img {
   right: 0;
 }
 #aside ul {
-  position: unset;
+  position: relative;
   top: calc(29px + 25px);
   overflow-x: hidden;
 }
