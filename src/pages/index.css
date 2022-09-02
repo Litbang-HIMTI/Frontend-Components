@@ -141,7 +141,7 @@ img {
   height: 29px;
   background-color: var(--color-app-black);
   border-bottom: 4px solid var(--color-app-white);
-  z-index: calc(var(--z-fixed) + 30);
+  z-index: calc(var(--z-fixed) + 2);
 }
 
 .navigation__container ul {
@@ -203,7 +203,7 @@ img {
   width: var(--width-aside);
   transition: transform 1s ease-in-out;
   transform: translateX(100%);
-  z-index: var(--z-fixed);
+  z-index: calc(var(--z-fixed) + 3);
   top: 0;
   right: 0;
 }
@@ -331,6 +331,7 @@ main {
     right: unset;
     left: 0;
     transform: translateX(0);
+    z-index: var(--z-fixed);
   }
   #aside ul {
     position: sticky;
