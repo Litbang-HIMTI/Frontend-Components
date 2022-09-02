@@ -19,6 +19,9 @@
   --body-font: 'Raleway', sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --title-font: 1.25rem;
+  --content-font: 1rem;
+
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -60,6 +63,9 @@
     --body-margin: 60px;
     --main-margin: 110px;
     --section-margin: 82px;
+
+    --title-font: 2rem;
+    --content-font: 1.25rem;
 
     --big-font-size: 3rem;
     --h1-font-size: 2.25rem;
@@ -133,6 +139,16 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.fs-title {
+  font-size: var(--title-font);
+  font-weight: 700;
+}
+
+.fs-text {
+  font-size: var(--content-font);
+  font-weight: 400;
 }
 
 /* ======= Header Style ======= */
