@@ -17,7 +17,7 @@
 .jumbotron__title {
   margin-bottom: 0;
   font-size: 38px;
-  font-weight: var(--font-bold);
+  font-weight: 700;
   color: var(--color-app-white);
 }
 

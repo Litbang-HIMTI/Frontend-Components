@@ -12,14 +12,28 @@ mainElement.addEventListener('click', () => {
 });
 
 // Slider active //
-const activeSliderElement = document.querySelector('#aside ul .active');
+// const sliderElement = document.querySelectorAll('.aside__link');
 const arrowRightElement = document.createElement('img');
 arrowRightElement.setAttribute(
   'src',
   '../../assets/icons/icon-right-arrow.svg'
 );
 
-activeSliderElement.insertBefore(
-  arrowRightElement,
-  activeSliderElement.firstChild
-);
+// sliderElement.forEach((element) => {
+//   // event on mouse hover
+//   element.addEventListener('mouseover', () => {
+//     element.before(arrowRightElement);
+//   });
+
+//   // event on mouse leave
+//   element.addEventListener('mouseleave', () => {
+//     element.removeChild(arrowRightElement);
+//   });
+// });
+
+// activeSliderElement;
+
+// activeSliderElement.insertBefore(
+//   arrowRightElement,
+//   activeSliderElement.firstChild
+// );

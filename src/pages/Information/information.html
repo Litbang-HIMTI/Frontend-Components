@@ -16,7 +16,6 @@
   </head>
   <body>
     <div class="divider position-sticky top-0 start-0 end-0"></div>
-
     <header>
       <nav class="navigation__container row gx-0">
         <a
@@ -27,7 +26,7 @@
         </a>
 
         <ul
-          class="col-12 col-lg-8 order-3 order-lg-2 d-flex justify-content-between align-items-center overflow-scroll gap-4 mb-0 ps-0 pb-4 pb-lg-5 pt-3 pt-lg-4"
+          class="col-12 col-lg-8 order-3 order-lg-2 d-flex justify-content-between align-items-center overflow-scroll gap-4 mb-0 px-3 pb-4 pb-lg-5 pt-3 pt-lg-4"
         >
           <li><a href="/">BPH</a></li>
           <li><a href="/">Departemen Kemahasiswaan</a></li>
@@ -54,14 +53,39 @@
     <main>
       <aside id="aside">
         <ul class="bottom-0 d-flex flex-column gap-3 mb-0 ps-0 mx-5 mx-lg-0">
-          <li><a href="/src/pages/Home/index.html">Home</a></li>
-          <li><a href="/src/pages/Profile/profile.html">Profile</a></li>
-          <li class="active">
-            <a href="/src/pages/Information/information.html">Information</a>
+          <li>
+            <a class="aside__link" href="/src/pages/Home/index.html">
+              <span>Home</span>
+            </a>
           </li>
-          <li><a href="/src/pages/Sevice/service.html">Service</a></li>
-          <li><a href="/src/pages/Forum/forum.html">Forum</a></li>
-          <li><a href="/src/pages/Blog/blog.html">Blog</a></li>
+          <li>
+            <a class="aside__link" href="/src/pages/Profile/profile.html">
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="active">
+            <a
+              class="aside__link"
+              href="/src/pages/Information/information.html"
+            >
+              <span>Information</span>
+            </a>
+          </li>
+          <li>
+            <a class="aside__link" href="/src/pages/Sevice/service.html">
+              <span>Service</span>
+            </a>
+          </li>
+          <li>
+            <a class="aside__link" href="/src/pages/Forum/forum.html">
+              <span> Forum </span>
+            </a>
+          </li>
+          <li>
+            <a class="aside__link" href="/src/pages/Blog/blog.html">
+              <span>Blog</span>
+            </a>
+          </li>
         </ul>
       </aside>
 
@@ -70,7 +94,9 @@
           <p class="fs-title mt-2 mt-md-4">Kanal Informasi Himti UIN Jakarta</p>
           <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="information__card col">
-              <div class="card border-0 position-relative start-0">
+              <a href="#" class="card border-0 position-relative start-0">
+                <div class="card__arrow"></div>
+                <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-1.png"
                   alt="information"
@@ -79,22 +105,17 @@
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
-                  <a href="#" class="card__header card-link position-relative">
-                    <p class="card-title">
-                      Open Recruitment Panitia PBAK Jurusan 2022
-                    </p>
-                    <img
-                      class="position-absolute top-0 end-0"
-                      src="../../assets/icons/icon-right-top-arrow.svg"
-                      alt="arrow link"
-                    />
-                  </a>
+                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
+                    Open Recruitment Panitia PBAK Jurusan 2022
+                  </p>
                   <p class="card-text">29 Juli 2022</p>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="information__card col">
-              <div class="card border-0 position-relative start-0">
+              <a href="#" class="card border-0 position-relative start-0">
+                <div class="card__arrow"></div>
+                <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-2.png"
                   alt="information"
@@ -103,23 +124,17 @@
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
-                  <a href="#" class="card__header card-link position-relative">
-                    <p class="card-title">
-                      Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan
-                      Teknologi
-                    </p>
-                    <img
-                      class="position-absolute top-0 end-0"
-                      src="../../assets/icons/icon-right-top-arrow.svg"
-                      alt="arrow link"
-                    />
-                  </a>
-                  <p class="card-text">02 Agustus 2022</p>
+                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
+                    Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan Teknologi
+                  </p>
+                  <p class="card-text">29 Juli 2022</p>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="information__card col">
-              <div class="card border-0 position-relative start-0">
+              <a href="#" class="card border-0 position-relative start-0">
+                <div class="card__arrow"></div>
+                <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-1.png"
                   alt="information"
@@ -128,22 +143,17 @@
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
-                  <a href="#" class="card__header card-link position-relative">
-                    <p class="card-title">
-                      Open Recruitment Panitia PBAK Jurusan 2022
-                    </p>
-                    <img
-                      class="position-absolute top-0 end-0"
-                      src="../../assets/icons/icon-right-top-arrow.svg"
-                      alt="arrow link"
-                    />
-                  </a>
+                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
+                    Open Recruitment Panitia PBAK Jurusan 2022
+                  </p>
                   <p class="card-text">29 Juli 2022</p>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="information__card col">
-              <div class="card border-0 position-relative start-0">
+              <a href="#" class="card border-0 position-relative start-0">
+                <div class="card__arrow"></div>
+                <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-2.png"
                   alt="information"
@@ -152,23 +162,17 @@
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
-                  <a href="#" class="card__header card-link position-relative">
-                    <p class="card-title">
-                      Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan
-                      Teknologi
-                    </p>
-                    <img
-                      class="position-absolute top-0 end-0"
-                      src="../../assets/icons/icon-right-top-arrow.svg"
-                      alt="arrow link"
-                    />
-                  </a>
-                  <p class="card-text">02 Agustus 2022</p>
+                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
+                    Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan Teknologi
+                  </p>
+                  <p class="card-text">29 Juli 2022</p>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="information__card col">
-              <div class="card border-0 position-relative start-0">
+              <a href="#" class="card border-0 position-relative start-0">
+                <div class="card__arrow"></div>
+                <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-1.png"
                   alt="information"
@@ -177,22 +181,17 @@
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
-                  <a href="#" class="card__header card-link position-relative">
-                    <p class="card-title">
-                      Open Recruitment Panitia PBAK Jurusan 2022
-                    </p>
-                    <img
-                      class="position-absolute top-0 end-0"
-                      src="../../assets/icons/icon-right-top-arrow.svg"
-                      alt="arrow link"
-                    />
-                  </a>
+                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
+                    Open Recruitment Panitia PBAK Jurusan 2022
+                  </p>
                   <p class="card-text">29 Juli 2022</p>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="information__card col">
-              <div class="card border-0 position-relative start-0">
+              <a href="#" class="card border-0 position-relative start-0">
+                <div class="card__arrow"></div>
+                <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-2.png"
                   alt="information"
@@ -201,23 +200,17 @@
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
-                  <a href="#" class="card__header card-link position-relative">
-                    <p class="card-title">
-                      Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan
-                      Teknologi
-                    </p>
-                    <img
-                      class="position-absolute top-0 end-0"
-                      src="../../assets/icons/icon-right-top-arrow.svg"
-                      alt="arrow link"
-                    />
-                  </a>
-                  <p class="card-text">02 Agustus 2022</p>
+                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
+                    Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan Teknologi
+                  </p>
+                  <p class="card-text">29 Juli 2022</p>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="information__card col">
-              <div class="card border-0 position-relative start-0">
+              <a href="#" class="card border-0 position-relative start-0">
+                <div class="card__arrow"></div>
+                <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-1.png"
                   alt="information"
@@ -226,22 +219,17 @@
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
-                  <a href="#" class="card__header card-link position-relative">
-                    <p class="card-title">
-                      Open Recruitment Panitia PBAK Jurusan 2022
-                    </p>
-                    <img
-                      class="position-absolute top-0 end-0"
-                      src="../../assets/icons/icon-right-top-arrow.svg"
-                      alt="arrow link"
-                    />
-                  </a>
+                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
+                    Open Recruitment Panitia PBAK Jurusan 2022
+                  </p>
                   <p class="card-text">29 Juli 2022</p>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="information__card col">
-              <div class="card border-0 position-relative start-0">
+              <a href="#" class="card border-0 position-relative start-0">
+                <div class="card__arrow"></div>
+                <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-2.png"
                   alt="information"
@@ -250,20 +238,12 @@
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
-                  <a href="#" class="card__header card-link position-relative">
-                    <p class="card-title">
-                      Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan
-                      Teknologi
-                    </p>
-                    <img
-                      class="position-absolute top-0 end-0"
-                      src="../../assets/icons/icon-right-top-arrow.svg"
-                      alt="arrow link"
-                    />
-                  </a>
-                  <p class="card-text">02 Agustus 2022</p>
+                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
+                    Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan Teknologi
+                  </p>
+                  <p class="card-text">29 Juli 2022</p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>

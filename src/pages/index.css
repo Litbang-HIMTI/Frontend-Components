@@ -9,6 +9,8 @@
   --main-margin: 20px;
   --section-margin: 37px;
   --width-aside: 215px;
+  --width-icon: 16px;
+  --size-icon-24: 24px;
 
   /* ======= Color ======= */
   --color-app-black: #000000;
@@ -21,20 +23,6 @@
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --title-font: 1.25rem;
   --content-font: 1rem;
-
-  --big-font-size: 2rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.125rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
-
-  /* ======= Font weight ======= */
-  --font-medium: 500;
-  --font-semibold: 600;
-  --font-bold: 700;
-  --font-extra-bold: 800;
 
   /* ======= Margin Bottom ======= */
   /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
@@ -53,8 +41,8 @@
   --z-modal: 1000;
 
   /* ======= Border height ======= */
-  --border-thin: 1px;
-  --border-thick: 4px;
+  --border-thin: 0.5px;
+  --border-thick: 3px;
 }
 
 /* ==================== Global Variable For Large and Extra Large Devices ==================== */
@@ -63,18 +51,10 @@
     --body-margin: 60px;
     --main-margin: 110px;
     --section-margin: 82px;
+    --width-icon: 32px;
 
     --title-font: 2rem;
     --content-font: 1.25rem;
-
-    --big-font-size: 3rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 813rem;
   }
 }
 
@@ -157,24 +137,63 @@ img {
   overflow: hidden;
 }
 
+.card__arrow {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  margin-right: var(--width-icon);
+  margin-top: var(--width-icon);
+  overflow: hidden;
+  transform: translate(0);
+  transition: all 0.3s ease-in-out;
+  z-index: var(--z-fixed);
+}
+
+.card__arrow::before {
+  content: url('../assets/icons/icon-right-top-arrow.svg');
+  order: 2;
+  position: relative;
+  right: 26px;
+  transform: translate(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.card__arrow::after {
+  content: url('../assets/icons/icon-right-top-arrow.svg');
+  order: 1;
+  transform: translate(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card__arrow::before,
+.card:hover .card__arrow::after {
+  transform: translate(26px, -24px);
+}
+
 .card > img {
   max-height: 163px !important;
   object-fit: cover;
 }
 
-.card-body {
+.card__overlay {
   background-color: var(--color-app-white);
+  position: absolute;
+  height: 100%;
+  width: 100%;
   opacity: 0.7;
+}
+
+.card-body {
   color: var(--color-app-black);
+}
+
+.card:hover .card__overlay {
+  opacity: 0.6;
 }
 
 .card-link > p {
   color: var(--color-app-black);
-}
-
-.card-link:hover > p {
-  text-decoration: underline;
-  text-underline-offset: 12px;
 }
 
 .card-title {
@@ -191,7 +210,6 @@ img {
 }
 
 /* ======= Header Style ======= */
-
 .divider {
   height: 29px;
   background-color: var(--color-app-black);
@@ -262,25 +280,58 @@ img {
   top: 0;
   right: 0;
 }
+
 #aside ul {
   position: relative;
   top: calc(29px + 25px);
   overflow-x: hidden;
+  padding: 1rem 0;
 }
-#aside .link-logo img {
-  margin-bottom: 143px;
+
+#aside .aside__link {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
 }
-#aside ul li a {
+
+#aside .aside__link::before {
+  content: url('../assets/icons/icon-right-arrow.svg');
+  width: var(--size-icon-24);
+  transform: translateX(calc(var(--size-icon-24) * -1));
+  transition: transform 0.3s ease-in-out;
+}
+
+#aside .aside__link span {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(calc(var(--size-icon-24) * -1));
+}
+
+#aside .aside__link:hover::before {
+  transform: translateX(0);
+}
+
+#aside .aside__link:hover span {
+  transform: translateX(0);
+}
+
+#aside .active .aside__link:before {
+  content: url('../assets/icons/icon-right-arrow.svg');
+  transform: translateX(0);
+}
+
+#aside .aside__link {
   font-weight: var(--font-semibold);
   color: var(--color-app-white);
 }
-#aside ul .active img {
-  margin-right: 10px;
-  animation: slide-right 0.5s ease-in-out;
+
+#aside .active .aside__link span {
+  transform: translateX(0);
 }
-#aside ul .active a {
+
+#aside .active .aside__link {
   font-weight: var(--font-extra-bold);
 }
+
 .open-slider {
   transform: translateX(0) !important;
 }
@@ -301,11 +352,11 @@ main {
 }
 
 .thick {
-  border-width: 3px;
+  border-width: var(--border-thick);
 }
 
 .thin {
-  border-width: 0.5px;
+  border-width: var(--border-thin);
 }
 
 /* ===== Footer Style ===== */
