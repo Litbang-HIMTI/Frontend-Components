@@ -358,6 +358,24 @@ main {
   border-width: var(--border-thin);
 }
 
+/* ====== Pagination ====== */
+.pagination .page-link {
+  background-color: transparent !important;
+  border: none;
+  color: var(--color-app-white);
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.pagination .pagination__next {
+  transform: rotate(180deg);
+}
+
+.pagination .pagination__arrow {
+  max-width: 11px;
+  max-height: 22px;
+}
+
 /* ===== Footer Style ===== */
 #footer {
   padding-top: 40px;

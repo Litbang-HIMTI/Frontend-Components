@@ -12,13 +12,15 @@
     />
 
     <link rel="stylesheet" href="../index.css" />
-    <link rel="stylesheet" href="./Information.css" />
+    <link rel="stylesheet" href="./Blog.css" />
   </head>
   <body>
     <div class="divider position-sticky top-0 start-0 end-0"></div>
+
     <header>
       <nav class="navigation__container row gx-0">
         <a
+          tabindex="1"
           class="link-logo col-8 col-lg-3 d-flex align-items-center pt-3 pt-lg-0"
           href="/"
         >
@@ -38,7 +40,7 @@
         <div
           class="navigation__action col-4 col-lg-1 order-2 order-lg-3 d-flex flex-row justify-content-end align-items-center gap-2 gap-sm-3 gap-md-4 pb-0 pb-lg-5 pt-3 pt-lg-4"
         >
-          <img src="../../assets/icons/icon-logo.svg" alt="logo" />
+          <img tabindex="0" src="../../assets/icons/icon-logo.svg" alt="logo" />
 
           <!-- Toggler Navbar -->
           <div class="navigation__toggler d-flex d-lg-none">
@@ -53,7 +55,7 @@
     <main>
       <aside id="aside">
         <ul class="bottom-0 d-flex flex-column gap-3 mb-0 ps-0 mx-5 mx-lg-0">
-          <li>
+          <li class="active">
             <a class="aside__link" href="/src/pages/Home/index.html">
               <span>Home</span>
             </a>
@@ -63,7 +65,7 @@
               <span>Profile</span>
             </a>
           </li>
-          <li class="active">
+          <li>
             <a
               class="aside__link"
               href="/src/pages/Information/information.html"
@@ -90,165 +92,175 @@
       </aside>
 
       <div id="main__container">
-        <section id="important-information" class="container">
-          <p class="fs-title mt-2 mb-4 mb-md-5">
-            Kanal Informasi Himti UIN Jakarta
-          </p>
+        <!-- Forums -->
+        <section id="blog" class="container">
+          <p tabindex="0" class="fs-title mt-2 mb-4 mb-md-5">Blog</p>
           <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="information__card col">
+            <div class="blog__card col">
               <a href="#" class="card border-0 position-relative start-0">
                 <div class="card__arrow"></div>
                 <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-1.png"
-                  alt="information"
+                  alt="blog"
                   class="card-img-top img-fluid"
                 />
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
                   <p class="card-title mt-4 mt-md-3 mt-lg-2">
-                    Open Recruitment Panitia PBAK Jurusan 2022
+                    Martin Cooper Penemu Telepon Genggam Pertama
                   </p>
+
                   <p class="card-text">29 Juli 2022</p>
                 </div>
               </a>
             </div>
-            <div class="information__card col">
+            <div class="blog__card col">
               <a href="#" class="card border-0 position-relative start-0">
                 <div class="card__arrow"></div>
                 <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-2.png"
-                  alt="information"
+                  alt="blog"
                   class="card-img-top img-fluid"
                 />
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
                   <p class="card-title mt-4 mt-md-3 mt-lg-2">
-                    Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan Teknologi
+                    Apa Itu HTTP? – Mengenal Pengertian, Fungsi, dan Cara Kerja
+                    HTTP
                   </p>
-                  <p class="card-text">29 Juli 2022</p>
+
+                  <p class="card-text">02 Agustus 2022</p>
                 </div>
               </a>
             </div>
-            <div class="information__card col">
-              <a href="#" class="card border-0 position-relative start-0">
-                <div class="card__arrow"></div>
-                <div class="card__overlay"></div>
-                <img
-                  src="../../assets/thumbs/thumb-information-1.png"
-                  alt="information"
-                  class="card-img-top img-fluid"
-                />
-                <div
-                  class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
-                >
-                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
-                    Open Recruitment Panitia PBAK Jurusan 2022
-                  </p>
-                  <p class="card-text">29 Juli 2022</p>
-                </div>
-              </a>
-            </div>
-            <div class="information__card col">
+            <div class="blog__card col">
               <a href="#" class="card border-0 position-relative start-0">
                 <div class="card__arrow"></div>
                 <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-2.png"
-                  alt="information"
+                  alt="blog"
                   class="card-img-top img-fluid"
                 />
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
                   <p class="card-title mt-4 mt-md-3 mt-lg-2">
-                    Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan Teknologi
+                    Mengenal Charles Babbage Sang Bapak Komputer
                   </p>
+
                   <p class="card-text">29 Juli 2022</p>
                 </div>
               </a>
             </div>
-            <div class="information__card col">
-              <a href="#" class="card border-0 position-relative start-0">
-                <div class="card__arrow"></div>
-                <div class="card__overlay"></div>
-                <img
-                  src="../../assets/thumbs/thumb-information-1.png"
-                  alt="information"
-                  class="card-img-top img-fluid"
-                />
-                <div
-                  class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
-                >
-                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
-                    Open Recruitment Panitia PBAK Jurusan 2022
-                  </p>
-                  <p class="card-text">29 Juli 2022</p>
-                </div>
-              </a>
-            </div>
-            <div class="information__card col">
+            <div class="blog__card col">
               <a href="#" class="card border-0 position-relative start-0">
                 <div class="card__arrow"></div>
                 <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-2.png"
-                  alt="information"
+                  alt="blog"
                   class="card-img-top img-fluid"
                 />
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
                   <p class="card-title mt-4 mt-md-3 mt-lg-2">
-                    Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan Teknologi
+                    Zoom Fatigue – Kelelahan akibat Meeting Online
                   </p>
-                  <p class="card-text">29 Juli 2022</p>
+
+                  <p class="card-text">02 Agustus 2022</p>
                 </div>
               </a>
             </div>
-            <div class="information__card col">
-              <a href="#" class="card border-0 position-relative start-0">
-                <div class="card__arrow"></div>
-                <div class="card__overlay"></div>
-                <img
-                  src="../../assets/thumbs/thumb-information-1.png"
-                  alt="information"
-                  class="card-img-top img-fluid"
-                />
-                <div
-                  class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
-                >
-                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
-                    Open Recruitment Panitia PBAK Jurusan 2022
-                  </p>
-                  <p class="card-text">29 Juli 2022</p>
-                </div>
-              </a>
-            </div>
-            <div class="information__card col">
+            <div class="blog__card col">
               <a href="#" class="card border-0 position-relative start-0">
                 <div class="card__arrow"></div>
                 <div class="card__overlay"></div>
                 <img
                   src="../../assets/thumbs/thumb-information-2.png"
-                  alt="information"
+                  alt="blog"
                   class="card-img-top img-fluid"
                 />
                 <div
                   class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
                 >
                   <p class="card-title mt-4 mt-md-3 mt-lg-2">
-                    Prosedur Cicilan UKT Mahasiswa Fakultas Sains dan Teknologi
+                    Martin Cooper Penemu Telepon Genggam Pertama
                   </p>
+
                   <p class="card-text">29 Juli 2022</p>
+                </div>
+              </a>
+            </div>
+            <div class="blog__card col">
+              <a href="#" class="card border-0 position-relative start-0">
+                <div class="card__arrow"></div>
+                <div class="card__overlay"></div>
+                <img
+                  src="../../assets/thumbs/thumb-information-2.png"
+                  alt="blog"
+                  class="card-img-top img-fluid"
+                />
+                <div
+                  class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
+                >
+                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
+                    Apa Itu HTTP? – Mengenal Pengertian, Fungsi, dan Cara Kerja
+                    HTTP
+                  </p>
+
+                  <p class="card-text">02 Agustus 2022</p>
+                </div>
+              </a>
+            </div>
+            <div class="blog__card col">
+              <a href="#" class="card border-0 position-relative start-0">
+                <div class="card__arrow"></div>
+                <div class="card__overlay"></div>
+                <img
+                  src="../../assets/thumbs/thumb-information-2.png"
+                  alt="blog"
+                  class="card-img-top img-fluid"
+                />
+                <div
+                  class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
+                >
+                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
+                    Mengenal Charles Babbage Sang Bapak Komputer
+                  </p>
+
+                  <p class="card-text">29 Juli 2022</p>
+                </div>
+              </a>
+            </div>
+            <div class="blog__card col">
+              <a href="#" class="card border-0 position-relative start-0">
+                <div class="card__arrow"></div>
+                <div class="card__overlay"></div>
+                <img
+                  src="../../assets/thumbs/thumb-information-2.png"
+                  alt="blog"
+                  class="card-img-top img-fluid"
+                />
+                <div
+                  class="card-body h-100 position-absolute d-flex flex-column justify-content-between p-3 p-md-4 p-lg-5"
+                >
+                  <p class="card-title mt-4 mt-md-3 mt-lg-2">
+                    Zoom Fatigue – Kelelahan akibat Meeting Online
+                  </p>
+
+                  <p class="card-text">02 Agustus 2022</p>
                 </div>
               </a>
             </div>
           </div>
         </section>
+
         <section id="pagination" class="container mt-5">
           <nav aria-label="Page navigation example">
             <ul
@@ -296,14 +308,16 @@
               class="d-flex justify-content-center justify-content-lg-start justify-content-ld-start align-items-center gap-3"
             >
               <img
+                tabindex="0"
                 class="img-40"
                 src="../../assets/icons/icon-logo.svg"
                 alt="logo himti"
               />
-              <p class="fs-2 fw-bold mb-0">Himti UIN Jakarta</p>
+              <p tabindex="0" class="fs-2 fw-bold mb-0">Himti UIN Jakarta</p>
             </div>
 
             <p
+              tabindex="0"
               class="footer__text-12-gray text-center text-lg-start mx-auto mx-lg-0 mt-2 mt-lg-3"
             >
               HIMTI UIN Syarif Hidayatullah Jakarta berfungsi sebagai
@@ -356,10 +370,15 @@
       <div class="credit border-top__content thin py-4">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <p class="text-gray fs-5">2022 Himti UINJakarta</p>
+            <p tabindex="0" class="text-gray fs-5">2022 Himti UINJakarta</p>
             <ul class="credit__media d-flex gap-4">
               <li>
-                <a target="_blank" rel="noopener noreferrer" href="#">
+                <a
+                  tabindex="0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="#"
+                >
                   <img
                     src="../../assets/icons/icon-intagram.svg"
                     alt="instagram"
