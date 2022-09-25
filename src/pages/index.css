@@ -269,16 +269,17 @@ img {
   right: 0;
 }
 
-#aside ul {
+#aside > ul {
   position: relative;
-  top: calc(29px + 25px);
   overflow-x: hidden;
+  top: calc(29px + 25px);
   padding: 1rem 0;
 }
 
 #aside .aside__link {
   display: flex;
   column-gap: 4px;
+  cursor: pointer;
   align-items: center;
 }
 
@@ -461,8 +462,9 @@ main {
     left: 0;
     transform: translateX(0);
     z-index: var(--z-fixed);
+    transform: scale(1);
   }
-  #aside ul {
+  #aside > ul {
     position: sticky;
   }
 

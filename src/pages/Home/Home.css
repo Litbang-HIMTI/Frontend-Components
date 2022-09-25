@@ -1,3 +1,32 @@
+.dropdown__link > .dropdown__menu {
+  display: none;
+  width: 100%;
+  z-index: var(--z-fixed);
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown__item {
+  padding: 8px 2px;
+  border-bottom: 1px solid #99cf9a;
+}
+
+.dropdown__item > a {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.dropdown__item:hover {
+  background-color: #99cf9a;
+}
+
+.dropdown__link > .dropdown__open {
+  display: block;
+  left: 0;
+  right: 0;
+}
+
 /* ===== Jumbotron Section ===== */
 .jumbotron__content {
   display: flex;
@@ -87,6 +116,20 @@
 }
 
 @media screen and (min-width: 992px) {
+  .dropdown__link > .dropdown__menu {
+    width: auto;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    left: 150px;
+    top: -16px;
+    transform: translateX(-50%);
+  }
+  .dropdown__link:hover > .dropdown__menu {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
   .jumbotron__title {
     font-size: 6vw;
   }
