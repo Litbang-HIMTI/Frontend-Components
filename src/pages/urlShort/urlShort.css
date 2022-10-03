@@ -1,0 +1,21 @@
+.input__url {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 2px 4px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.link__shortened {
+  border-bottom: 1px solid;
+  width: 75%;
+  text-align: center;
+  color: inherit;
+}
+
+.link__shortened:hover {
+  color: inherit;
+}

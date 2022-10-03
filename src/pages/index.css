@@ -109,6 +109,20 @@ img {
   height: auto;
 }
 
+.btn__app {
+  color: inherit;
+  border: 1px solid;
+  width: 155px;
+  margin: 0 auto;
+  border-radius: 13px;
+  padding: 8px;
+}
+
+.btn__app:hover {
+  color: #1d1d1d;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .fs-title {
   font-size: var(--title-font);
   font-weight: 700;
